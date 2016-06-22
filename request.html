@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FreeCodeCamp Image Search</title>
+        <link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"> </script>
+        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+
+        <script>
+        
+        $(startup);
+        
+        function startup(){
+       
+       $.ajax({
+          url: 'https://api.imgur.com/3/gallery/search?q="cats"',
+          type: 'GET',
+          headers: { 'Authorization': 'Client-ID defab2311de7962'},  
+          success: function(result) { console.log(result)},
+          error: function(err) {console.log(err) }
+        });
+      
+        }
+        
+
+       </script>       
+       
+       </head>
+       
+       <body>
+           This is the request page.
+       </body>
+      </html>

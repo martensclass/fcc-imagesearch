@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FreeCodeCamp Image Search</title>
+        <link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+        <style>
+            html{
+                background: #82706B;
+                height: 95%;
+            }
+            body{
+                background: white;
+                width: 95%;
+                margin: 5px auto;
+                height: 95%;
+                 box-shadow: 10px 10px 5px #333333;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-md-10 col-md-offset-1'>
+        <h1>FreeCodeCamp Image Search JSON Layer</h1><hr>
+        
+        <h3>How It Works</h3>
+        <p>Add the path <em>/api/search/&lt;search term&gt;</em> to this url and get a json list of image results from IMGUR for that term.  For example: </p>
+        
+        <pre>
+           https://fcc-imagesearch-martensclass.c9users.io/api/search/coffee
+        </pre>
+        
+        <p>..will return a json list of coffee images from IMGUR</p>
+        <h3>Offestting Results</h3>
+        <p>You can also offset the results and start at a different page by adding a page value BEFORE the search term as in: <em> /api/search/page/&lt;search term&gt;</em></p>
+        
+        <pre>
+           https://fcc-imagesearch-martensclass.c9users.io/api/search/3/dogs
+        </pre>
+        <p>..will return a json list of dog images from IMGUR, starting at page 3 of the results.  If you enter an invalid page value, the server will respond with an error.</p>
+        
+        
+        <p>To see the list of past searches add the path <em>'/api/latest'</em> to the url.  Or what the heck, just click <a href='/api/latest'>here</a> to see a list of past searches.</p>
+       
+        <div style="margin-top: 30px;">
+        <hr style="border: 1px solid #ccc;">
+        <h6 class='pull-right'>Another fine coding project by John Martens &nbsp;<img src='https://lh3.googleusercontent.com/-VGyN2Vhp68s/Vrxs2Z331EI/AAAAAAAAHyU/dA_OggEu-0wyOkRifq1AV7pbQKdaQDTKQCCo/s128/johnmartens.png' class='img-circle' height=75></h6>    
+        </div>
+        
+        
+        </div>
+        </div>
+        </div>
+    </body>
+</html>
