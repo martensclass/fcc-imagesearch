@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var mongoose = require('mongoose');
-var url = "mongodb://localhost:27017/clementinejs";
+var url = process.env.MONGOLAB_URI;
 var request = require("request");
 
 mongoose.connect(url);
